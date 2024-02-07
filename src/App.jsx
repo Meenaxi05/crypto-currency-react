@@ -19,14 +19,8 @@ function App() {
         console.log(error, "error cant display");
       }
     } ;
-  
-    const fetchCryptoDelay = () => {
-      setTimeout(() =>{
-        fetchData();
-      }, 2000)
-    };
+    fetchData();
 
-    fetchCryptoDelay()
   }, [])
 
   return (
